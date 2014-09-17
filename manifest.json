@@ -1,0 +1,30 @@
+{
+  "name": "Columnify",
+  "description": "Turns page-width text into a more readable column.",
+  "version": "0.0.0.2",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab"
+  ],
+  "icons": {
+     "128": "icon128.png" 
+  },
+  "background": {
+    "scripts": ["background2.js"],
+    "persistent": false
+  },
+  "commands": {
+    "columnify": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+K"
+      },
+      "description": "Makes column."
+    },
+    "decolumnify": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L"
+      },
+      "description": "Undoes column."
+    }
+  }
+}
